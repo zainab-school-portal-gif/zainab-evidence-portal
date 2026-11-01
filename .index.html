@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>بوابة شواهد الأداء الوظيفي | متوسطة زينب بنت العوام</title>
+<style>
+:root{
+ --purple:#6541a5;
+ --green:#168c70;
+ --light:#f7f5fc;
+ --ink:#302b40;
+}
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Tahoma,Arial,sans-serif;
+ background:var(--light);
+ color:var(--ink);
+}
+header{
+ position:sticky;
+ top:0;
+ z-index:10;
+ background:linear-gradient(110deg,#6541a5,#168c70);
+ color:white;
+ padding:16px 20px;
+ box-shadow:0 4px 20px #0002;
+}
+.head{
+ max-width:1100px;
+ margin:auto;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ flex-wrap:wrap;
+ gap:12px;
+}
+.school{font-size:19px;font-weight:bold}
+.principal{font-size:13px;opacity:.95}
+main{max-width:1100px;margin:auto;padding:24px 16px}
+.hero{
+ background:linear-gradient(135deg,#eee5ff,#e0f6eb);
+ border:1px solid #e1d7f2;
+ border-radius:26px;
+ padding:32px 22px;
+ text-align:center;
+}
+.hero h1{color:#56338d;font-size:27px;margin:12px 0}
+.hero p{line-height:1.9}
+.tag{
+ display:inline-block;
+ padding:9px 16px;
+ border-radius:40px;
+ background:white;
+ color:#168c70;
+ font-weight:bold;
+}
+.panel{
+ background:white;
+ border-radius:20px;
+ padding:22px;
+ margin-top:22px;
+ box-shadow:0 5px 22px #3224500c;
+}
+h2{color:#56338d;font-size:20px}
+label{display:block;margin:12px 0 6px;font-weight:bold}
+input,textarea{
+ width:100%;
+ padding:13px;
+ border:1px solid #dcd7e9;
+ border-radius:12px;
+ font:inherit;
+ background:#fff;
+}
+button{
+ background:var(--purple);
+ color:white;
+ border:0;
+ border-radius:12px;
+ padding:12px 18px;
+ font:inherit;
+ font-weight:bold;
+ cursor:pointer;
+}
+button.green{background:var(--green)}
+button.ghost{background:#eee8fa;color:#56338d}
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+ gap:16px;
+ margin-top:20px;
+}
+.card{
+ background:white;
+ border:1px solid #e9e4f2;
+ border-radius:20px;
+ padding:19px;
+ box-shadow:0 5px 18px #34244d0a;
+}
+.number{
+ display:inline-grid;
+ place-items:center;
+ width:39px;height:39px;
+ background:#eee7fc;
+ color:var(--purple);
+ border-radius:12px;
+ font-weight:bold;
+}
+.card h3{font-size:16px;line-height:1.8;min-height:58px}
+.card p{font-size:13px;color:#68717b}
+.card button{width:100%;margin-top:8px}
+.stats{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:12px;
+ margin-top:18px;
+}
+.stat{
+ background:white;
+ border-radius:16px;
+ padding:18px 10px;
+ text-align:center;
+}
+.stat strong{
+ display:block;
+ font-size:24px;
+ color:var(--green);
+}
+.stat small{font-size:12px}
+.progress{
+ height:12px;
+ background:#e8e3f1;
+ border-radius:20px;
+ overflow:hidden;
+ margin-top:15px;
+}
+.bar{
+ height:100%;
+ width:0%;
+ background:linear-gradient(90deg,#168c70,#8f6acb);
+ transition:.3s;
+}
+.evidence{
+ background:#f5f2fb;
+ padding:12px;
+ border-radius:12px;
+ margin:9px 0;
+ overflow-wrap:anywhere;
+}
+.evidence a{color:#56338d}
+footer{
+ text-align:center;
+ padding:30px 15px;
+ color:#6c6179;
+ font-size:13px;
+}
+.hidden{display:none}
+.note{
+ color:#7b6c8e;
+ font-size:12px;
+ line-height:1.8;
+}
+@media(max-width:500px){
+ .hero h1{font-size:23px}
+ .stats{gap:7px}
+ .stat{padding:14px 5px}
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="head">
+  <div>
+   <div class="school">🏫 متوسطة زينب بنت العوام</div>
+   <div class="principal">مديرة المدرسة: خديجة الثقفي</div>
+  </div>
+  <div>💜 بوابة شواهد الأداء الوظيفي 💚</div>
+ </div>
+</header>
+
+<main>
+ <section class="hero">
+  <span class="tag">✨ نحو أداء متميز وإنجاز موثق</span>
+  <h1>بوابة شواهد الأداء الوظيفي</h1>
+  <p>
+   مساحة رقمية منظمة لتوثيق إنجازات المعلمات،
+   ومتابعة الشواهد وفق عناصر تقييم الأداء الوظيفي.
+  </p>
+ </section>
+
+ <section class="panel">
+  <h2>👩‍🏫 ملف المعلمة</h2>
+  <label for="teacher">اسم المعلمة</label>
+  <input id="teacher" placeholder="اكتبي اسم المعلمة">
+  <p class="note">
+   هذه نسخة تجريبية. تُحفظ البيانات في هذا المتصفح فقط،
+   وليست حسابات مستقلة أو نظام دخول آمنًا.
+  </p>
+  <button class="green" onclick="openProfile()">فتح ملف الشواهد</button>
+ </section>
+
+ <section id="workspace" class="hidden">
+  <div class="panel">
+   <h2 id="welcome"></h2>
+   <div class="stats">
+    <div class="stat">
+     <strong>11</strong>
+     <small>عناصر التقييم</small>
+    </div>
+    <div class="stat">
+     <strong id="completed">0</strong>
+     <small>عناصر موثقة</small>
+    </div>
+    <div class="stat">
+     <strong id="percent">0%</strong>
+     <small>نسبة الإنجاز</small>
+    </div>
+   </div>
+   <div class="progress"><div id="bar" class="bar"></div></div>
+  </div>
+
+  <div class="panel">
+   <h2>📋 عناصر تقييم الأداء الوظيفي</h2>
+   <p>اختاري العنصر لإضافة شواهده أو استعراضها.</p>
+   <div id="cards" class="grid"></div>
+  </div>
+
+  <section id="editor" class="panel hidden">
+   <h2 id="editorTitle"></h2>
+   <label for="description">وصف الشاهد</label>
+   <textarea id="description" rows="3"
+    placeholder="اكتبي وصفًا مختصرًا للشاهد"></textarea>
+
+   <label for="url">رابط الشاهد (اختياري)</label>
+   <input id="url" type="url"
+    placeholder="https://example.com">
+
+   <p class="note">
+    يمكن إضافة روابط الملفات الموجودة في مساحة تخزين
+    مصرح بها. رفع الملفات مباشرة غير متاح في هذه النسخة.
+   </p>
+
+   <button class="green" onclick="saveEvidence()">
+    ➕ حفظ الشاهد
+   </button>
+   <button class="ghost" onclick="closeEditor()">
+    إغلاق
+   </button>
+
+   <h3>الشواهد المسجلة</h3>
+   <div id="evidenceList"></div>
+  </section>
+ </section>
+</main>
+
+<footer>
+ <strong>متوسطة زينب بنت العوام</strong>
+ <p>مديرة المدرسة: خديجة الثقفي</p>
+ <p>تصميم وبرمجة معلمة الحاسب الآلي: مسلمة الخديدي</p>
+</footer>
+
+<script>
+const criteria=[
+"أداء الواجبات الوظيفية",
+"التفاعل مع المجتمع المهني",
+"التفاعل مع أولياء الأمور",
+"التنويع في استراتيجيات التدريس",
+"تحسين نتائج المتعلمين",
+"إعداد وتنفيذ خطة التعلم",
+"توظيف تقنيات ووسائل التعلم المناسبة",
+"تهيئة بيئة تعليمية",
+"الإدارة الصفية",
+"تحليل نتائج المتعلمين وتشخيص مستوياتهم",
+"تنوع أساليب التقويم"
+];
+
+let teacher="";
+let selected=0;
+let records={};
+
+function key(){
+ return "zainab-evidence-demo:"+teacher;
+}
+
+function openProfile(){
+ const name=document.getElementById("teacher").value.trim();
+ if(!name){
+  alert("يرجى كتابة اسم المعلمة");
+  return;
+ }
+ teacher=name;
+ try{
+  records=JSON.parse(localStorage.getItem(key())||"{}");
+ }catch(e){records={};}
+ document.getElementById("workspace").classList.remove("hidden");
+ document.getElementById("editor").classList.add("hidden");
+ document.getElementById("welcome").textContent=
+  "🌷 ملف شواهد المعلمة: "+teacher;
+ renderCards();
+ document.getElementById("workspace").scrollIntoView({
+  behavior:"smooth"
+ });
+}
+
+function getItems(i){
+ return Array.isArray(records[i])?records[i]:[];
+}
+
+function renderCards(){
+ const cards=document.getElementById("cards");
+ cards.innerHTML="";
+ let completed=0;
+
+ criteria.forEach((title,i)=>{
+  const count=getItems(i).length;
+  if(count)completed++;
+
+  const card=document.createElement("article");
+  card.className="card";
+
+  const number=document.createElement("span");
+  number.className="number";
+  number.textContent=i+1;
+
+  const heading=document.createElement("h3");
+  heading.textContent=title;
+
+  const info=document.createElement("p");
+  info.textContent="عدد الشواهد: "+count;
+
+  const button=document.createElement("button");
+  button.textContent="📂 إدارة الشواهد";
+  button.onclick=()=>openEditor(i);
+
+  card.append(number,heading,info,button);
+  cards.appendChild(card);
+ });
+
+ const percent=Math.round(completed/criteria.length*100);
+ document.getElementById("completed").textContent=completed;
+ document.getElementById("percent").textContent=percent+"%";
+ document.getElementById("bar").style.width=percent+"%";
+}
+
+function openEditor(i){
+ selected=i;
+ document.getElementById("editor").classList.remove("hidden");
+ document.getElementById("editorTitle").textContent=
+  "📁 "+(i+1)+" / "+criteria[i];
+ document.getElementById("description").value="";
+ document.getElementById("url").value="";
+ renderEvidence();
+ document.getElementById("editor").scrollIntoView({
+  behavior:"smooth"
+ });
+}
+
+function closeEditor(){
+ document.getElementById("editor").classList.add("hidden");
+}
+
+function saveEvidence(){
+ const description=document.getElementById("description").value.trim();
+ const url=document.getElementById("url").value.trim();
+
+ if(!description){
+  alert("يرجى كتابة وصف الشاهد");
+  return;
+ }
+
+ if(url){
+  try{
+   const parsed=new URL(url);
+   if(!["https:","http:"].includes(parsed.protocol)){
+    throw Error("invalid");
+   }
+  }catch(e){
+   alert("يرجى إدخال رابط صحيح يبدأ بـ https://");
+   return;
+  }
+ }
+
+ if(!records[selected])records[selected]=[];
+ records[selected].push({
+  description:description,
+  url:url,
+  date:new Date().toLocaleDateString("ar-SA")
+ });
+
+ try{
+  localStorage.setItem(key(),JSON.stringify(records));
+ }catch(e){
+  alert("تعذر حفظ البيانات على هذا الجهاز");
+  return;
+ }
+
+ document.getElementById("description").value="";
+ document.getElementById("url").value="";
+ renderEvidence();
+ renderCards();
+ alert("تم حفظ الشاهد بنجاح 💚");
+}
+
+function renderEvidence(){
+ const list=document.getElementById("evidenceList");
+ list.innerHTML="";
+ const items=getItems(selected);
+
+ if(!items.length){
+  const empty=document.createElement("p");
+  empty.textContent="لا توجد شواهد مسجلة لهذا العنصر بعد.";
+  list.appendChild(empty);
+  return;
+ }
+
+ items.forEach((item,index)=>{
+  const box=document.createElement("div");
+  box.className="evidence";
+
+  const desc=document.createElement("p");
+  desc.textContent=item.description;
+  box.appendChild(desc);
+
+  const date=document.createElement("small");
+  date.textContent=item.date||"";
+  box.appendChild(date);
+
+  if(item.url){
+   const link=document.createElement("a");
+   link.href=item.url;
+   link.target="_blank";
+   link.rel="noopener noreferrer";
+   link.textContent=" 🔗 فتح رابط الشاهد";
+   box.appendChild(link);
+  }
+
+  const remove=document.createElement("button");
+  remove.className="ghost";
+  remove.style.margin="10px";
+  remove.textContent="حذف";
+  remove.onclick=()=>{
+   if(!confirm("هل تريدين حذف هذا الشاهد؟"))return;
+   records[selected].splice(index,1);
+   localStorage.setItem(key(),JSON.stringify(records));
+   renderEvidence();
+   renderCards();
+  };
+  box.appendChild(remove);
+  list.appendChild(box);
+ });
+}
+</script>
+</body>
+</html>
